@@ -4,12 +4,28 @@
   box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+  width: 10px;
+  border: 1px solid red;
+}
+
+*::-webkit-scrollbar-track {
+  background: darkslategray;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: aliceblue;
+  border-radius: 10px;
+  border: 1px solid darkslategray;
+}
+
 body {
   width: 100vw;
   height: 100vh;
   font-family: 'Poppins', sans-serif;
   background-color: aliceblue;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: overlay;
 }
 
 #greating {
