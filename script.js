@@ -9,3 +9,7 @@ helloBtn.addEventListener('click', () => {
   1000);
   document.body.style.overflow = 'overlay';
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.work').forEach(e => e.style.setProperty('--bg', `url(${e.querySelector('img:not(.star)').src})`))
+})

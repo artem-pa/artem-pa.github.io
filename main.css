@@ -141,6 +141,24 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  text-shadow: 0 0 10px #F0F8FF;
+  position: relative;
+}
+
+.first-side p.light {
+  color: #F0F8FF;
+  text-shadow: none;
+}
+
+.first-side p::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: var(--bg);
+  background-size: 100%;
+  filter: blur(10px);
+  position: absolute;
+  z-index: -1;
 }
 
 .second-side {
